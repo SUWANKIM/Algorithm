@@ -9,12 +9,29 @@
  입출력 예
  seoul	return
  [Jane, Kim]	김서방은 1에 있다*/
+ import java.util.Arrays;
 
- class FindMrKim{
-    public static void main(String[] args){
-        String[] seoul = {"Lee", "Kim"};
+class Solution {
+    public String solution(String[] seoul) {
+        String answer = "";
+        int x = 0;
 
-        System.out.print(Solution());
+        x = Arrays.binarySearch(seoul, "Kim");
+        answer = "김서방은 " +x+"에 있다";
+
+        return answer;
     }
 }
-//
+
+
+ public class FindMrKim{
+    public static void main(String[] args){
+        String[] seoul = {"Lee", "Kim"};
+        Solution s1 = new Solution();
+
+        s1.solution(seoul);
+        System.out.println(s1);
+    }
+    
+}
+
