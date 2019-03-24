@@ -18,7 +18,7 @@ class Solution {
 
         x = Arrays.binarySearch(seoul, "Kim");
         answer = "김서방은 " +x+"에 있다";
-
+        System.out.println(answer);
         return answer;
     }
 }
@@ -30,7 +30,6 @@ class Solution {
         Solution s1 = new Solution();
 
         s1.solution(seoul);
-        System.out.println(s1);
     }
     
 }
